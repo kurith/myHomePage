@@ -1,0 +1,146 @@
+/* styles.css */
+
+:root{
+  --bg: #ffffff;
+  --text: #111111;
+  --muted: #666666;
+  --link: #0645ad;
+  --link-visited: #0b0080;
+  --border: #e6e6e6;
+
+  --maxw: 900px;
+  --pad: 20px;
+  --leading: 1.45;
+}
+
+*{ box-sizing: border-box; }
+html, body { height: 100%; }
+body{
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+  line-height: var(--leading);
+}
+
+a{ color: var(--link); text-decoration: none; }
+a:hover{ text-decoration: underline; }
+a:visited{ color: var(--link-visited); }
+
+.page{
+  max-width: var(--maxw);
+  padding: calc(var(--pad) * 1.2) var(--pad);
+  margin: 0 auto;
+}
+
+.masthead{
+  margin-bottom: 18px;
+}
+
+.kicker{
+  margin: 0 0 6px 0;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.name{
+  margin: 0;
+  font-size: clamp(34px, 4vw, 44px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.title{
+  margin: 6px 0 10px 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.affiliation,
+.email{
+  margin: 4px 0;
+  font-size: 16px;
+}
+
+.muted-link{ color: var(--muted); }
+.muted-link:visited{ color: var(--muted); }
+
+.nav{
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+}
+
+.nav-list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+}
+
+.nav-list a{
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+.hero{
+  margin: 18px 0 22px 0;
+}
+
+.hero img{
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+.caption{
+  margin-top: 6px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.timeline{
+  margin-top: 8px;
+}
+
+.month{
+  margin: 18px 0 6px 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.entries{
+  margin: 0 0 6px 0;
+  padding-left: 22px; /* classic academic-homepage indent */
+}
+
+.entries li{
+  margin: 6px 0;
+}
+
+.venue{
+  color: var(--muted);
+}
+
+.footer{
+  margin-top: 26px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+.muted{
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* Small-screen tuning */
+@media (max-width: 520px){
+  .page{ padding: 18px 14px; }
+  .nav-list{ gap: 8px 10px; }
+  .entries{ padding-left: 18px; }
+}

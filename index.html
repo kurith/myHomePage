@@ -1,0 +1,99 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cristhian Yamith Cely Oliveros</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <main class="page">
+      <header class="masthead" aria-label="Page header">
+        <p class="kicker"><a href="#" class="muted-link">home page</a> of</p>
+
+        <h1 class="name">Cristhian Yamith Cely Oliveros</h1>
+        <h2 class="title">Computer Systems Engineer</h2>
+<!-- 
+        <p class="affiliation">
+          <a href="https://www.harvard.edu/" target="_blank" rel="noreferrer">Universidad Nacional de Colombia</a>
+        </p> -->
+        <p class="email">
+          <a href="mailto:cristhiancely7@gmail.com">cristhiancely7@gmail.com</a>
+        </p>
+
+        <nav class="nav" aria-label="Primary navigation">
+          <ul class="nav-list">
+            <li><a href="#bio">Bio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#cv">CV</a></li>
+            <li><a href="#films">Films</a></li>
+            <li><a href="#music-videos">Music Videos</a></li>
+            <li><a href="#office-hours">Office Hours</a></li>
+            <li><a href="#photos">Photos</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#research-statement">Research Statement</a></li>
+            <li><a href="#speaking">Speaking Engagements</a></li>
+            <li><a href="#talks">Talks</a></li>
+            <li><a href="#teaching-statement">Teaching Statement</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <figure class="hero" aria-label="Featured image">
+        <!-- Replace with the real image path you have rights to use -->
+        <img
+          src="hero.jpg"
+          alt="Portrait or featured photo"
+          loading="lazy"
+          width="1200"
+          height="800"
+        />
+        <figcaption class="caption">Photo credit / source</figcaption>
+      </figure>
+
+      <section class="timeline" aria-label="Updates">
+        <!-- Example groups. Add as many as you need. -->
+        <h3 class="month">January 2026</h3>
+        <ul class="entries">
+          <li>
+            <a href="#" target="_blank" rel="noreferrer">Embracing Artificial Intelligence in CS50 (example link)</a>,
+            <span class="venue">Example venue / publication</span>
+          </li>
+        </ul>
+
+        <h3 class="month">November 2025</h3>
+        <ul class="entries">
+          <li>
+            <a href="#" target="_blank" rel="noreferrer">Interview / talk title (example link)</a>,
+            <span class="venue">Example outlet</span>
+          </li>
+        </ul>
+
+        <h3 class="month">August 2025</h3>
+        <ul class="entries">
+          <li>
+            <a href="#" target="_blank" rel="noreferrer">Teaching with AI (example link)</a>,
+            <span class="venue">Example org</span>
+          </li>
+          <li>
+            Some entry without a link,
+            <span class="venue">Example context</span>
+          </li>
+        </ul>
+      </section>
+
+      <footer class="footer">
+        <p class="muted">
+          © <span id="year"></span> — Personal homepage 
+        </p>
+      </footer>
+    </main>
+
+    <script>
+      // Tiny convenience: keep the footer year current.
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
